@@ -1,0 +1,87 @@
+.header-img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.student-info {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn-cordinator {
+    padding: 3px;
+    margin: 3px;
+    width: 180px;
+    border-radius: 30px;
+    border: none;
+    background-color: #efad19;
+    box-shadow: 0px 3px 1px -2px rgb(0, 0, 0);
+}
+
+.child-container{
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 5px 2px gray;
+}
+
+.submit-card{
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid green;;
+    box-shadow: 1px 1px 3px  gray;
+}
+
+
+.pending-card{
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #ff704d;;
+    box-shadow: 1px 1px 3px  gray;
+}
+
+.temp-card{
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;;
+    box-shadow: 1px 1px 3px  gray;
+}
+
+.msg-btn{
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: #efad19;
+    box-shadow: 0px 3px 1px -2px rgb(0, 0, 0);
+}
+
+.done-btn{
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #0275d8;
+    box-shadow: 0px 3px 1px -2px rgb(0, 0, 0);
+}
