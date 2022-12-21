@@ -1,6 +1,7 @@
 import React from 'react'
 import profileImg from './profile.png'
 import './StudentProfile.css'
+import {Link} from 'react-router-dom'
 
 function StudentProfile() {
   return (
@@ -57,7 +58,7 @@ function StudentProfile() {
             <div className='row'>
                 <div className='col-md-6 mt-5'> 
                 <div className='text-center'>
-                <button className='msg-btn'><b>Message</b></button>
+                <Link to="/message"><button className='msg-btn'><b>Message</b></button></Link>
                 </div>
                 </div>
                 <div className='col-md-6 mt-5'>

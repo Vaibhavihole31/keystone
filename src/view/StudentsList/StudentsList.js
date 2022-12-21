@@ -31,7 +31,7 @@ function StudentsList() {
                         <td>{item.studentName}</td>
                         <td>{item.emailId}</td>
                         <td>{item.contactNumber}</td>
-                        <td><Link to="/studentprofile">{item.Status}</Link> <Link to="/studentprofile">{item.Button}</Link></td>
+                        <td><Link to="/message">{item.Status}</Link> <Link to="/studentprofile">{item.Button}</Link></td>
                         </tr>
                 
                     );
