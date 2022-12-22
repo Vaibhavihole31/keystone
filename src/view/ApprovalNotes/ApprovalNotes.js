@@ -1,14 +1,14 @@
 import React from 'react'
-import './PendingNotes.css'
-import StudentData from './PendingNotesData'
+import './ApprovalNotes.css'
+import StudentData from './ApprovalNotesData'
 import {Link} from 'react-router-dom'
 
-function PendingNotes() {
+function ApprovalNotes() {
   return (
     <>
       <div>
         <div className='container'>
-        <h2 className='mt-4 text-center'>Pending Notes</h2>
+        <h2 className='mt-4 text-center'>Approval Notes</h2>
             <div className='card mt-4 p-4'>
     <table className="table">
   <thead>
@@ -31,7 +31,7 @@ function PendingNotes() {
                         <td>{item.date}</td>
                         <td>{item.topic}</td>
                         <td>{item.link}</td>
-                        <td><Link to="/approvalnotes">{item.Status}</Link> <Link to="/approvalnotes">{item.Button}</Link></td>
+                        <td><Link to="/message">{item.Status}</Link> <Link to="/studentprofile">{item.Button}</Link></td>
                         </tr>
                 
                     );
@@ -48,4 +48,4 @@ function PendingNotes() {
   )
 }
 
-export default PendingNotes
+export default ApprovalNotes

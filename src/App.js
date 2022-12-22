@@ -4,6 +4,7 @@ import StudentList from './view/StudentsList/StudentsList'
 import StudentProfile from './view/StudentProfile/StudentProfile'
 import Message from './components/Message/Message'
 import PendingNotes from './view/PendingNotes/PendingNotes'
+import ApprovalNotes from './view/ApprovalNotes/ApprovalNotes'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path='/studentprofile' element={<StudentProfile/>}/>
       <Route path='/message' element={<Message/>}/>
       <Route path='/pendingnotes' element={<PendingNotes/>} />
+      <Route path='/approvalnotes' element={<ApprovalNotes/>} />
     </Routes>
     </BrowserRouter>
   )
