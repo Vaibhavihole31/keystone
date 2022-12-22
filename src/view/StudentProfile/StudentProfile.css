@@ -36,8 +36,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid green;;
-    box-shadow: 1px 1px 3px  gray;
+    box-shadow: 3px 3px 5px 2px gray;
 }
 
 
@@ -48,8 +47,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid #ff704d;;
-    box-shadow: 1px 1px 3px  gray;
+    box-shadow: 3px 3px 5px 2px gray;
 }
 
 .temp-card{
@@ -59,8 +57,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid black;;
-    box-shadow: 1px 1px 3px  gray;
+    box-shadow: 3px 3px 5px 2px gray;
 }
 
 .msg-btn{
