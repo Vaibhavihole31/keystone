@@ -31,7 +31,7 @@ function ApprovalNotes() {
                         <td>{item.date}</td>
                         <td>{item.topic}</td>
                         <td>{item.link}</td>
-                        <td><Link to="/message">{item.Status}</Link> <Link to="/studentprofile">{item.Button}</Link></td>
+                        <td><Link to="/studentnotes">{item.Status}</Link> {item.Button}</td>
                         </tr>
                 
                     );

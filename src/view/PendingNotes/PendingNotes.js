@@ -31,7 +31,7 @@ function PendingNotes() {
                         <td>{item.date}</td>
                         <td>{item.topic}</td>
                         <td>{item.link}</td>
-                        <td><Link to="/approvalnotes">{item.Status}</Link> <Link to="/approvalnotes">{item.Button}</Link></td>
+                        <td><Link to="/studentnotes">{item.Status}</Link> <Link to="/approvalnotes">{item.Button}</Link></td>
                         </tr>
                 
                     );
