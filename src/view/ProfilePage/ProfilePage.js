@@ -1,8 +1,35 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './ProfilePage.css'
 import profileImg from './profile.png'
+import PersonalDeatils from './../../components/PersonalDeatils/PersonalDeatils'
+import FamilyDeatils from './../../components/FamilyDeatils/FamilyDeatils'
+import Attendance from './../../components/Attendance/Attendance'
+
 
 function ProfilePage() {
+  const [personalDeatils, setPersonalDeatils] = useState(true);
+  const [familyDeatils, setFamilyDeatils] = useState(false);
+  const [attendance, setAttendance] = useState(false);
+
+ const personalDetailsHandler =  () => {
+    setPersonalDeatils(true)
+    setFamilyDeatils(false)
+    setAttendance(false)
+  }
+
+  const familyDetailsHandler =  () => {
+    setPersonalDeatils(false)
+    setFamilyDeatils(true)
+    setAttendance(false)
+  }
+
+  const attendanceDetailsHandler =  () => {
+    setPersonalDeatils(false)
+    setFamilyDeatils(false)
+    setAttendance(true)
+  }
+  
+
     return (
         <>
             <div className='container'>
@@ -60,9 +87,9 @@ function ProfilePage() {
                                 <b className='ks-child-container'>Keystone School of Engineering College in Pune, Maharashtra</b>
                             </div>
                             <div className='mt-5 text-center'>
-                                <button className='personal-deatils-btn'><b>Personal Deatils</b></button> <br /><br />
-                                <button className='family-deatils-btn'><b>Family Deatils</b></button>  <br /><br />
-                                <button className='acadmic-deatils-btn'><b>Academic Deatils</b></button>  <br /><br />
+                                <button className='personal-deatils-btn' onClick={personalDetailsHandler}><b>Personal Deatils</b></button> <br /><br />
+                                <button className='family-deatils-btn'onClick={familyDetailsHandler}><b>Family Deatils</b></button>  <br /><br />
+                                <button className='acadmic-deatils-btn' onClick={attendanceDetailsHandler}><b>Academic Deatils</b></button>  <br /><br />
                             </div>
                         </div>
                     </div>
@@ -72,7 +99,9 @@ function ProfilePage() {
             <div className='container'>
                 <div className='information-container'>
                     <div className='row'>
-                               
+                                { personalDeatils && <PersonalDeatils/>  }
+                                {familyDeatils && <FamilyDeatils/>}
+                                {attendance && <Attendance/>}
                     </div>
                 </div>
             </div>
