@@ -69,6 +69,13 @@ function ProfilePage() {
                 </div>
             </div>
 
+            <div className='container'>
+                <div className='information-container'>
+                    <div className='row'>
+                               
+                    </div>
+                </div>
+            </div>
 
         </>
     )
