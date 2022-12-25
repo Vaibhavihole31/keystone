@@ -3,30 +3,30 @@ import './ProfilePage.css'
 import profileImg from './profile.png'
 import PersonalDeatils from './../../components/PersonalDeatils/PersonalDeatils'
 import FamilyDeatils from './../../components/FamilyDeatils/FamilyDeatils'
-import Attendance from './../../components/Attendance/Attendance'
+import AcadmicDetails from '../../components/AcadmicDetails/AcadmicDetails'
 
 
 function ProfilePage() {
   const [personalDeatils, setPersonalDeatils] = useState(true);
   const [familyDeatils, setFamilyDeatils] = useState(false);
-  const [attendance, setAttendance] = useState(false);
+  const [acadmicDetails, setAcadmicDeatils] = useState(false);
 
  const personalDetailsHandler =  () => {
     setPersonalDeatils(true)
     setFamilyDeatils(false)
-    setAttendance(false)
+    setAcadmicDeatils(false)
   }
 
   const familyDetailsHandler =  () => {
     setPersonalDeatils(false)
     setFamilyDeatils(true)
-    setAttendance(false)
+    setAcadmicDeatils(false)
   }
 
-  const attendanceDetailsHandler =  () => {
+  const acadmicDeatilsHandler =  () => {
     setPersonalDeatils(false)
     setFamilyDeatils(false)
-    setAttendance(true)
+    setAcadmicDeatils(true)
   }
   
 
@@ -89,7 +89,7 @@ function ProfilePage() {
                             <div className='mt-5 text-center'>
                                 <button className='personal-deatils-btn' onClick={personalDetailsHandler}><b>Personal Deatils</b></button> <br /><br />
                                 <button className='family-deatils-btn'onClick={familyDetailsHandler}><b>Family Deatils</b></button>  <br /><br />
-                                <button className='acadmic-deatils-btn' onClick={attendanceDetailsHandler}><b>Academic Deatils</b></button>  <br /><br />
+                                <button className='acadmic-deatils-btn' onClick={acadmicDeatilsHandler}><b>Academic Deatils</b></button>  <br /><br />
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ function ProfilePage() {
                     <div className='row'>
                                 { personalDeatils && <PersonalDeatils/>  }
                                 {familyDeatils && <FamilyDeatils/>}
-                                {attendance && <Attendance/>}
+                                {acadmicDetails && <AcadmicDetails/>}
                     </div>
                 </div>
             </div>
