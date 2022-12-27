@@ -7,6 +7,7 @@ import PendingNotes from './view/PendingNotes/PendingNotes'
 import ApprovalNotes from './view/ApprovalNotes/ApprovalNotes'
 import StudentsNotes from './view/StudentsNotes/StudentsNotes'
 import ProfilePage from './view/ProfilePage/ProfilePage'
+import AssignmentSessionView from './view/AssignmentSessionView/AssignmentSessionView'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/approvalnotes' element={<ApprovalNotes/>} />
       <Route path= '/studentnotes' element={<StudentsNotes/>} />
       <Route path='/profilepage' element={<ProfilePage/>} />
+      <Route path='/assignment-session' element={<AssignmentSessionView/>} />
     </Routes>
     </BrowserRouter>
   )

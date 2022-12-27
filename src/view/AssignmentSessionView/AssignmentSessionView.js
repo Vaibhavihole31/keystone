@@ -1,17 +1,16 @@
 import React from 'react'
-import './StudentsNotes.css'
 
-function StudentsNotes() {
+function AssignmentSessionView() {
   return (
     <>
-      <div className='container'>
+    <div className='container'>
         <div className='child-contain-2 mt-5 mb-5'>
           <div className='row'>
-            <h1 className='text-center'>Notes View</h1>
+            <h1 className='text-center'>Assignment Session</h1>
             <div className='col-md-6'>
               <div className='text-center student-info'>
-                <b>Group Name :</b> ABC  <br /><br />
-                <b>Title of Topic :</b>Random
+                <b>Topic Name :</b> ABC  <br /><br />
+                <b>Student Name :</b>Random
               </div>
             </div>
             <div className='col-md-6'>
@@ -26,7 +25,7 @@ function StudentsNotes() {
           <div className='row'>
             <div className='col-md-2'></div>
             <div className='col-md-8'>
-              <div className='pdf-container'>Notes / PDF opening</div>
+              <div className='pdf-container'>Assignment Opening</div>
             </div>
             <div className='col-md-2'></div>
           </div>
@@ -41,14 +40,14 @@ function StudentsNotes() {
               <div className='text-center mb-2'>
 
                 <button type="button" class="reject-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  <b>Reject</b>
+                  <b>Betterment</b>
                 </button>
 
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Reason Of Rejection...</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Betterment Reason</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
@@ -56,7 +55,7 @@ function StudentsNotes() {
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Betterment</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
                       </div>
                     </div>
                   </div>
@@ -70,4 +69,4 @@ function StudentsNotes() {
   )
 }
 
-export default StudentsNotes
+export default AssignmentSessionView
