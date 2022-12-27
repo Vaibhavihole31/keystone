@@ -8,6 +8,7 @@ import ApprovalNotes from './view/ApprovalNotes/ApprovalNotes'
 import StudentsNotes from './view/StudentsNotes/StudentsNotes'
 import ProfilePage from './view/ProfilePage/ProfilePage'
 import AssignmentSessionView from './view/AssignmentSessionView/AssignmentSessionView'
+import LetestMeetup from './view/LetestMeetup/LetestMeetup'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path= '/studentnotes' element={<StudentsNotes/>} />
       <Route path='/profilepage' element={<ProfilePage/>} />
       <Route path='/assignment-session' element={<AssignmentSessionView/>} />
+      <Route path='/leatest-meetup' element={<LetestMeetup/>} />
     </Routes>
     </BrowserRouter>
   )
