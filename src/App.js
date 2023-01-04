@@ -11,6 +11,7 @@ import AssignmentSessionView from './view/AssignmentSessionView/AssignmentSessio
 import LetestMeetup from './view/LetestMeetup/LetestMeetup'
 import PreviousMeetup from './view/PreviousMeetup/PreviousMeetup'
 import PendingAssignment from './components/PendingAssignment/PendingAssignment'
+import AssignmentForm from './components/AssignmentForm/AssignmentForm'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path='/leatest-meetup' element={<LetestMeetup/>} />
       <Route path='/previous-meetup' element={<PreviousMeetup/>} /> 
       <Route path='/pendingassignment' element={<PendingAssignment/>} />
+      <Route path='/assignmentform' element={<AssignmentForm/>} />
     </Routes>
     </BrowserRouter>
   )
