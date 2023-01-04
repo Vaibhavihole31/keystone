@@ -31,7 +31,7 @@ function PendingAssignment() {
                         <td>{item.TopicName}</td>
                         <td>{item.DateOfPost}</td>
                         <td>{item.Description}</td>
-                        <td><Link to="/message">{item.Button}</Link></td>
+                        <td><Link to="/assignmentform">{item.Button}</Link></td>
                         </tr>
                 
                     );

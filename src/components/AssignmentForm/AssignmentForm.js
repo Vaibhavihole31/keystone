@@ -9,6 +9,7 @@ function AssignmentForm() {
      <div className="container">
         <div className="studymaterial-card">
           <div className="row">
+            <h3 className='text-center mb-3'>Assignment Form</h3>
             <div className="col-md-6">
               <img
                 className="study-material-img mx-auto d-block"
