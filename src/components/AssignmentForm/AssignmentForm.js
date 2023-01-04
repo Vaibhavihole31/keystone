@@ -3,6 +3,7 @@ import './AssignmentForm.css'
 import StudyMaterialHeaderImg from './study-material-header-img.png'
 
 function AssignmentForm() {
+
   return (
     <>
      <div className="container">
@@ -36,18 +37,15 @@ function AssignmentForm() {
                 </div>
                 <div className="mb-3">
                   <input
-                    type="text"
+                    type="file"
                     className="form-control"
-                    id="url"
-                    placeholder="URL"
                   />
                 </div>
                 <div className="mb-3">
-                  <select className="form-select" aria-label="Select Content Type">
+                  <select className="form-select" id="contenttype" aria-label="Select Content Type">
                     <option> Select Content Type </option>
                     <option value="pdf">PDF</option>
                     <option value="link">Link</option>
-                    <option value="video">Video</option>
                   </select>
                 </div>
                 <button className="button-add-material w-100 mt-5 mb-3" type="button" >
