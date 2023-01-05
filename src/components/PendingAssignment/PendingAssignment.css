@@ -31,3 +31,16 @@
   .profile-btn{
   margin-left: 80px;
   }
+
+  .topicname{
+    width: 225px;
+    text-align: center;
+  }
+
+  .date{
+    width: 150px;
+  }
+
+  .description{
+    text-align: center;
+  }

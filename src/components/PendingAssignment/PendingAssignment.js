@@ -14,9 +14,9 @@ function PendingAssignment() {
   <thead>
     <tr>
       <th scope="col">Sr.no</th>
-      <th scope="col">Topic Name</th>
-      <th scope="col">Date Of Post</th>
-      <th scope="col">Description</th>
+      <th scope="col" className='topicname'>Topic Name</th>
+      <th scope="col" className='date'>Date Of Post</th>
+      <th scope="col" className='description'>Description</th>
       <th scope="col" className='text-center'>Status</th>
     </tr>
   </thead>
