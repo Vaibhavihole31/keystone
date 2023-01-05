@@ -45,21 +45,21 @@ function App() {
 
   return (
     <>
-    <div className='container-1'>
+    <div className='container'>
    
-   <form>
-    <label><h5>Upload Pdf</h5></label>
+   <form> 
+    <h5 className='text-center mt-5'>Upload Pdf</h5>
      <br/><br/>
 
-     <input type='file' className="form-controls"
+     <input type='file' className="form-controls custom-css"
      onChange={handleFile}></input>
 
      {pdfError&&<span className='text-danger'>{pdfError}</span>}
    </form>
 
-      <h5>View PDF</h5>
+      <h5 className='text-center'>View PDF</h5>
 
-      <div className='container'>
+      <div className='container-1'>
 
         {pdfFile&&(
            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.1.81/build/pdf.worker.min.js">
