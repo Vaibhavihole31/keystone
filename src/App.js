@@ -13,6 +13,7 @@ import PreviousMeetup from './view/PreviousMeetup/PreviousMeetup'
 import PendingAssignment from './components/PendingAssignment/PendingAssignment'
 import AssignmentForm from './components/AssignmentForm/AssignmentForm'
 import SubmmitedAssignments from './components/SubmmitedAssignments/SubmmitedAssignments'
+import StudentInfo from './components/StudentInfo/StudentInfo'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Route path='/pendingassignment' element={<PendingAssignment/>} />
       <Route path='/assignmentform' element={<AssignmentForm/>} />
       <Route path='/submmitedAssignment' element={<SubmmitedAssignments/>} />
+      <Route path='/studentinfo' element={<StudentInfo/>} /> 
     </Routes>
     </BrowserRouter>
   )
